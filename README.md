@@ -47,10 +47,8 @@ python run_metattack_rate_frac.py --dataset pubmed --function transformer --bloc
 
 Our code is developed based on the following repo:
 
-The FDE solver is from [torchfde](https://github.com/zknus/torchfde).  
-
-The GIA attack method is based on the [GIA-HAO](https://github.com/LFhase/GIA-HAO/tree/master) repo.   
-
+The FDE solver is from [torchfde](https://github.com/zknus/torchfde).
+The GIA attack method is based on the [GIA-HAO](https://github.com/LFhase/GIA-HAO/tree/master) repo.
 The graph neural ODE model is based on the [GraphCON](https://github.com/tk-rusch/GraphCON), [GRAND](https://github.com/twitter-research/graph-neural-pde), and [GraphBel](https://github.com/zknus/Robustness-of-Graph-Neural-Diffusion)   framework.  
 The METATTACK and NETTACK methods are based on the [deeprobust](https://github.com/DSE-MSU/DeepRobust) repo.
 
