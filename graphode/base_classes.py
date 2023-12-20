@@ -68,10 +68,7 @@ class BaseGNN(MessagePassing):
     if self.opt['use_mlp']:
       self.m11 = nn.Linear(opt['hidden_dim'], opt['hidden_dim'])
       self.m12 = nn.Linear(opt['hidden_dim'], opt['hidden_dim'])
-    # if opt['use_labels']:
-    #   opt['hidden_dim'] = opt['hidden_dim'] + dataset.num_classes
-    # else:
-    #   self.hidden_dim = opt['hidden_dim']
+    self.hidden_dim = opt['hidden_dim']
     if opt['fc_out']:
       self.fc = nn.Linear(opt['hidden_dim'], opt['hidden_dim'])
     self.m2 = nn.Linear(opt['hidden_dim'], self.num_classes)
